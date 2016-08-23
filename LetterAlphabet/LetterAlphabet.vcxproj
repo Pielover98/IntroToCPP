@@ -19,10 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{0994AE85-4E17-4CA0-A77E-1483F3E024E9}</ProjectGuid>
-    <RootNamespace>YesVariables</RootNamespace>
+    <ProjectGuid>{4CFBB8F2-3B2D-4498-922C-E73DA5A8536D}</ProjectGuid>
+    <RootNamespace>LetterAlphabet</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>Variables</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
