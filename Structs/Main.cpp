@@ -44,39 +44,25 @@ void main()
 */
 
 // After Reference Lecture Problem
+#include "Dino.h"
 #include <iostream>
 
-struct Dino
-{
-	char name[80];
-	float age;
-	float powerlvl;
-};
-Dino makeDino()
-{
-	Dino dino;
-	dino.age = 100;
-	dino.powerlvl = 9000;
-	printf("What is dino's name?: ");
-	scanf_s("%s", dino.name, 80);
-	getchar();
-	return dino;
-}
-void printDino(Dino dino)
-{
-	printf("Your dino name %s has an age of %f and has a power level %f \n", dino.name, dino.age, dino.powerlvl);
-}
-void modifyDino(Dino &dino)
-{
-	printf("Please enter a new level that you would like your dino to be at : ");
-	scanf_s("%f", &dino.powerlvl);
-	getchar();
-}
+
+
 void main()
 {
-	Dino dino = makeDino();
-	printDino(dino);
-	modifyDino(dino);
-	printDino(dino);
+	const int array_size = 5;
+	Dino dino[array_size];
+	for (int i = 0; i < array_size; ++i)
+	{
+		dino[i] = makeDino();
+		printDino(dino[i]);
+		modifyDino(dino[i]);
+		if (dino[i].powerlvl && dino[i].dangerlvl)
+		{
+			petDino(dino[i]);
+		}
+
+	}
 	getchar();
 }
